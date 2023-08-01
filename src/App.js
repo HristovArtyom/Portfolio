@@ -12,7 +12,7 @@ export const ThemeContext = createContext(null);
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/Portfolio/",
     element: <About/>,
     errorElement: <ErrorPage />
   }  
