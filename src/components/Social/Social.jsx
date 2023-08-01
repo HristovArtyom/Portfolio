@@ -8,17 +8,17 @@ const Social = () => {
   return (
     <ul className="social__list">
       <li className="social__item">
-        <NavLink to="https://www.facebook.com/Marvel/" target='_blank' className="social__link" rel="noreferrer">
+        <NavLink to="https://www.facebook.com/khristov.a.v" target='_blank' className="social__link" rel="noreferrer">
           <FbLogo></FbLogo>
         </NavLink>
       </li>
       <li className="social__item">
-        <NavLink to="https://www.instagram.com/marvel/" target='_blank' className="social__link" rel="noreferrer">
+        <NavLink to="https://www.instagram.com/hristov.artyom/" target='_blank' className="social__link" rel="noreferrer">
           <InsLogo></InsLogo>
        </NavLink>
       </li>
       <li className="social__item">
-        <NavLink to="https://twitter.com/Marvel" target='_blank' className="social__link" rel="noreferrer">
+        <NavLink to="https://github.com/HristovArtyom" target='_blank' className="social__link" rel="noreferrer">
           <GitLogo></GitLogo>
         </NavLink>
       </li>
