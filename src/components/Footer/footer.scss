@@ -1,0 +1,35 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 25px;
+  margin: 25px 0 50px;
+  border: 1px solid #b48d59;
+  border-radius: 10px;
+  align-items: center;
+  
+  &__h1 {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: #b48d59;
+    -webkit-text-stroke-width: 2px;
+    font-weight: 600;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .footer {
+    &__h1 {
+      font-size: 20px;
+    }    
+  }
+}
+
+@media screen and (max-width:576px) {
+  .footer {
+    flex-direction: column;
+    gap: 25px;
+  }
+}

@@ -1,0 +1,56 @@
+// @use 'variables' as *;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+::-webkit-scrollbar {
+  width: 10px;  
+}
+
+::-webkit-scrollbar-track {
+  background: grey; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(0deg, grey 0%, #b48d59 100%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(0deg, grey 0%, #b48d59 100%);
+}
+
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600 !important;
+}
+
+html,
+body {
+  
+  // background: rgba(243, 243, 243, 0.30);
+  // filter: blur(25px);
+  // font-family: 'Montserrat', sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 0 !important;
+}
+
+img,
+video,
+iframe {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+body.embed{overflow:auto !important}

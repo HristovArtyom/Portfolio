@@ -1,0 +1,21 @@
+.skills {
+  padding: 35px 50px;
+  border: 1px solid #b48d59;
+  border-radius: 10px;
+
+  &__h3 {
+    color: #b48d59;
+    font-size: 36px;
+  }
+
+  &__subtitle {
+    color: #919191;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .skills {
+    padding: 25px;
+  }
+}

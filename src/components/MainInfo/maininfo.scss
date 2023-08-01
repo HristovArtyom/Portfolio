@@ -1,0 +1,50 @@
+.about {
+  border: 1px solid #b48d59;
+  border-radius: 10px;
+  padding: 35px 50px;
+  margin-bottom: 25px;
+
+  &__h3 {    
+    font-size: 36px;
+    color: #b48d59;
+  }
+
+  &__subtitle {
+    color: #919191;
+    font-size: 20px;
+    margin: 20px 0;
+    line-height: 1.5rem;
+    
+  }
+
+  &__btn {
+    margin-top: 21px;
+
+    & svg {
+      fill: #b48d59;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__btn::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #b48d59;
+    margin: 7px 0 23px;
+  }
+
+  &__btn--education {
+    margin-right: 100px;
+    color: #616161;
+    font-size: 20px; 
+  }
+}
+
+@media screen and (max-width:768px) {
+  .about {
+    padding: 25px;
+  }
+}
+

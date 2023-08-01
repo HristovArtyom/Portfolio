@@ -1,0 +1,154 @@
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+.cards {
+  &__about {
+    display: flex;
+    gap: 50px;
+    margin: 23px 0 62px;
+  }
+}
+
+@keyframes clockwise {
+  0% {
+    top: -5px;
+    left: 0;
+  }
+  12% {
+    top: -2px;
+    left: 2px;
+  }
+  25% {
+    top: 0;
+    left: 5px;    
+  }
+  37% {
+    top: 2px;
+    left: 2px;
+  }
+  50% {
+    top: 5px;
+    left: 0;    
+  }
+  62% {
+    top: 2px;
+    left: -2px;
+  }
+  75% {
+    top: 0;
+    left: -5px;
+  }
+  87% {
+    top: -2px;
+    left: -2px;
+  }
+  100% {
+    top: -5px;
+    left: 0;    
+  }
+}
+
+@keyframes counterclockwise {
+  0% {
+    top: -5px;
+    right: 0;
+  }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
+  25% {
+    top: 0;
+    right: 5px;    
+  }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
+  50% {
+    top: 5px;
+    right: 0;    
+  }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
+  75% {
+    top: 0;
+    right: -5px;
+  }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
+  100% {
+    top: -5px;
+    right: 0;    
+  }
+}
+
+.card {
+
+  &__description,
+    &__num {
+      margin-bottom: 0;
+    }
+
+  &__about {
+    width: 190px;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+    border-top: 2px solid transparent;
+
+    &:hover {      
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.5);
+      box-shadow: 5px 5px 12px #00000035;
+      cursor: pointer;
+      border-top: 2px solid #ffffff75;
+      border-left: 2px solid #ffffff75;
+      backdrop-filter: blur(6px);
+
+      & .card__num {
+        transform: scale(4) translate(-50%, -30%) rotate(-20deg);
+        background: linear-gradient(164deg, #b48d59 0%, rgba(255, 206, 141, 0.1058823529) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: .8s;
+      }
+
+      & .card__description {
+        color: #b48d59;
+      }
+
+      & svg {
+        fill: #b48d59;
+      }
+    }
+  }
+
+  &__img svg {
+    fill: #919191;
+  }
+
+  &__num {
+    font-size: 40px;
+  }
+}
+
+.description {
+  color: #919191;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 65px;
+  gap: 20px;
+}
+
+@media screen and (max-width:768px) {
+  .card {
+    &__about {
+      pointer-events: none;
+    }
+  }
+}

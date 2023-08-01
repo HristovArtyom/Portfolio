@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+import About from './pages/About';
+import ErrorPage from './pages/Error';
+import { createContext, useState } from 'react';
+
 import './App.css';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+export const ThemeContext = createContext(null);
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <About/>,
+    errorElement: <ErrorPage />
+  }  
+]);
+
 
 function App() {
+  const [theme, setTheme] = useState('dark');
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeContext.Provider value={{theme, setTheme}}>
+      <RouterProvider router={router} />
+    </ThemeContext.Provider>
   );
 }
 

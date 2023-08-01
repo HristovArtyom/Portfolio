@@ -1,0 +1,33 @@
+@keyframes btn-hover {
+  0% {background: linear-gradient(135deg, transparent 0, #b48d59 0%, #b48d59 10%,transparent 10%);}
+  10% {background: linear-gradient(135deg, transparent 0, #b48d59 10%, #b48d59 20%, transparent 20%);}
+  20% {background: linear-gradient(135deg, transparent 10%, #b48d59 20%, #b48d59 30%, transparent 30%);}
+  30% {background: linear-gradient(135deg, transparent 20%, #b48d59 30%, #b48d59 40%, transparent 40%);}
+  40% {background: linear-gradient(135deg, transparent 30%, #b48d59 40%, #b48d59 50%, transparent 50%);}
+  50% {background: linear-gradient(135deg, transparent 40%, #b48d59 50%, #b48d59 60%, transparent 60%);}
+  60% {background: linear-gradient(135deg, transparent 50%, #b48d59 60%, #b48d59 70%, transparent 70%);}
+  70% {background: linear-gradient(135deg, transparent 60%, #b48d59 70%, #b48d59 80%, transparent 80%);}
+  80% {background: linear-gradient(135deg, transparent 80%, #b48d59 90%, #b48d59 100%, transparent 100%);}
+  90% {background: linear-gradient(135deg, transparent 90%, #b48d59 100%, #b48d59 0%, transparent 0%);}
+}
+
+
+.button {
+  text-transform: uppercase;
+  border-radius: 50px;
+  border: 2px solid #b48d59;
+  padding: 10px 40px;
+  color: #b48d59;
+  text-decoration: none;
+
+  &:hover {
+    animation-name: btn-hover;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
