@@ -68,8 +68,6 @@
   }
 }
 
-
-
 @media screen and (max-width:1024px) {
   .header {
     &__name {
@@ -93,7 +91,7 @@
     }
   }
 
-  .nav {    
+  .nav {
     &__list {
       display: none;
       padding-left: 0;
@@ -142,11 +140,7 @@
       transform: translateY(-100%);
     }
   }
-  
-  // .burger__open {
-  //   animation: burgerRotate 1s linear infinite;
-  // }
-  
+
   .open {    
     animation: slideInRight 0.3s linear;
     display: block;
@@ -173,11 +167,11 @@
     background: rgba(0, 0, 0, 0.8);
   }
 
-  .center__hide {  
+  .center__hide {
     width: 50px;
   }
 
-  .center__open {  
+  .center__open {
     width: 50px;
   }
   
@@ -226,5 +220,3 @@
     }
   }
 }
-
-

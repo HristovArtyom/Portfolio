@@ -62,10 +62,10 @@
     cursor: pointer;
 
     &:hover {
-      box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);     
+      box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
       border-radius: 20px;
       border: 1px solid #b48d59;
-      background: rgba(0, 0, 0, 0.732);      
+      background: rgba(0, 0, 0, 0.732);
 
       & svg {
         animation: heartbeat 1s infinite;
@@ -80,7 +80,7 @@
 }
 
 .meter {
-	height: 25px;  
+	height: 25px;
 }
 
 .scale {

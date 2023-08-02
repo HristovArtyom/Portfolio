@@ -29,23 +29,16 @@ const Header = () => {
     <header className={`header header__${theme.theme}`}>
       <Container>
         <div className="header__wrapper">
-          <Link to="/" className="header__name">Artyom Hristov</Link>
+          <Link href="/" className="header__name">Artyom Hristov</Link>
           <nav className="nav">
             <ul className={`nav__list ${menu}`}>
-              <Nav to='/' link='About'/>
-              <Nav to='/skills' link='Skills'/>
-              <Nav to='/portfolio' link='Portfolio'/>
-            </ul>
-            {/* <div className={`burger burger__${menu}`} onClick={openMenu}> */}
-              {/* <span className="burger__menu"></span>
-              <span className="burger__menu"></span>
-              <span className="burger__menu"></span> */}
-
-              <div className={`center center__${menu}`} onClick={openMenu}>
-                <div></div>
-              </div>
-
-            {/* </div> */}
+              <Nav to='/Portfolio/' text='About'/>
+              <Nav to='/Portfolio#skills' text='Skills'/>
+              <Nav to='/Portfolio#portfolio' text='Portfolio'/>
+            </ul> 
+            <div className={`center center__${menu}`} onClick={openMenu}>
+              <div></div>
+            </div>
             <Form className='switch'>
               <Form.Check onChange={handleChange}
                 checked={checked}

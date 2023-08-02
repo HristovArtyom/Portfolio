@@ -43,25 +43,25 @@ const Main = () => {
   return(
     <main className={`main main__${theme.theme}`}>
       <Container>
-        <div className="main__wrapper">          
+        <div className="main__wrapper">
           <aside className="aside">
             <div className="img">
               <img className={`img__user img__${theme.theme}`} src={Photo} alt="" />
-            </div>            
+            </div>
               <h2 className="user__name">Artyom Hristov</h2>
               <p className="user__title">Frontend Developer</p>
-              <p className="user__info">High level  experience in web design and development knowledge.</p>            
+              <p className="user__info">High level  experience in web design and development knowledge.</p>
             <div className="user__social">
               <Social />
-            </div>            
+            </div>
             <Button onClick={() => handleShow()} text="Contact me">
               Contact Me
             </Button>
-            <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>              
+            <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
               <Modal.Header closeButton>
                 <Modal.Title>Contact Me</Modal.Title>
               </Modal.Header>
-              <Modal.Body className={`a a__${theme.theme}`}>                
+              <Modal.Body className={`a a__${theme.theme}`}>
                 <form ref={form} onSubmit={sendEmail} className='form'>
                   <label className='form__label'>Name</label>
                   <input className='form__input'  type="text" name="user_name" placeholder='Enter your name' required/>
@@ -74,7 +74,7 @@ const Main = () => {
               </Modal.Body>
             </Modal>
           </aside>
-          <section className="main__info">          
+          <section className="main__info">
             <MainInfo />
             <Skills />
             <Portfolio />

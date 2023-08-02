@@ -1,11 +1,11 @@
 import './footer.scss';
-import Container from '../Container/Container';
 import Social from '../Social/Social';
+import { HashLink } from 'react-router-hash-link';
 
 const Footer = () => {
   return(
     <footer className="footer">
-      <h1 className="footer__h1">Artyom Hristov</h1>
+      <HashLink to="/Portfolio#" className="footer__h1">Artyom Hristov</HashLink>
       <Social />
     </footer>
   )

@@ -3,25 +3,26 @@ import {ReactComponent as FirstLogo} from '../../images/about-first.svg';
 import {ReactComponent as SecondLogo} from '../../images/about-second.svg';
 import {ReactComponent as ThirdLogo} from '../../images/about-third.svg';
 
-const cardsArr = [
-  {
-    logo:<FirstLogo/>,
-    title: "Years experience",
-    number: "1"
-  },
-  {
-    logo:<SecondLogo/>,
-    title: "Completed projects",
-    number: "4"
-  },
-  {
-    logo:<ThirdLogo/>,
-    title: "Companies worked",
-    number: "1"
-  }
-]
 
 const CardAbout = () => {
+  const cardsArr = [
+    {
+      logo:<FirstLogo/>,
+      title: "Years experience",
+      number: "1"
+    },
+    {
+      logo:<SecondLogo/>,
+      title: "Completed projects",
+      number: "4"
+    },
+    {
+      logo:<ThirdLogo/>,
+      title: "Companies worked",
+      number: "1"
+    }
+  ]
+  
   return(
     <div className="cards__about">
       {cardsArr.map((item, index) =>

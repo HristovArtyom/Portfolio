@@ -5,25 +5,26 @@ import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Diplom from '../../images/diplom-merged.pdf';
 
-const cardsArr = [
-  {
-    title: "FrontEnd",
-    place: "Odessa - Beetroot Academy",
-    date: "2023"
-  },
-  {
-    title: "Programming Robotics",
-    place: "Zaporizhia - Yaskawa, Motoman",
-    date: "2021"
-  },
-  {
-    title: "Automation",
-    place: "Odessa - ONPU University",
-    date: "2003-2008"
-  }
-]
 
 const EduCard = () => {
+  const cardsArr = [
+    {
+      title: "FrontEnd",
+      place: "Odessa - Beetroot Academy",
+      date: "2023"
+    },
+    {
+      title: "Programming Robotics",
+      place: "Zaporizhia - Yaskawa, Motoman",
+      date: "2021"
+    },
+    {
+      title: "Automation",
+      place: "Odessa - ONPU University",
+      date: "2003-2008"
+    }
+  ]
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -47,13 +48,13 @@ const EduCard = () => {
           </div>
         )}
       </div>
-      <Modal size="xl" show={show} onHide={handleClose}>   
+      <Modal size="xl" show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Diplom</Modal.Title>
-        </Modal.Header>       
+        </Modal.Header>
         <Modal.Body>
-          <iframe className='iframe' src={Diplom} title='Diplom'></iframe>          
-        </Modal.Body>          
+          <iframe className='iframe' src={Diplom} title='Diplom'></iframe>
+        </Modal.Body>
       </Modal>
     </>
   )

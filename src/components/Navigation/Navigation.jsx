@@ -1,10 +1,10 @@
 import './navigation.scss';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
-const Nav = ({ to, link }) => {
+const Nav = ({ to, text }) => {
   return (
     <li className="nav__item">
-      <Link to={to} className="nav__link">{link}</Link>
+      <HashLink to={to} className="nav__link">{text}</HashLink>
     </li>
   )
 }
