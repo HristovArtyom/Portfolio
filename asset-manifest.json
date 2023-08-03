@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.b9dc691d.css",
-    "main.js": "/Portfolio/static/js/main.f3db03f4.js",
+    "main.css": "/Portfolio/static/css/main.9baf90b5.css",
+    "main.js": "/Portfolio/static/js/main.803b359d.js",
     "static/js/787.f6e65957.chunk.js": "/Portfolio/static/js/787.f6e65957.chunk.js",
     "static/media/bg3.jpg": "/Portfolio/static/media/bg3.9e7b4f58e516a2434065.jpg",
     "static/media/diplom-merged.pdf": "/Portfolio/static/media/diplom-merged.a625cd1e15b92488743d.pdf",
+    "static/media/bg3_1.jpg": "/Portfolio/static/media/bg3_1.c4b34f5ff906ccd19221.jpg",
     "static/media/photo.jpg": "/Portfolio/static/media/photo.c6ccb7a2ea9466079a1b.jpg",
+    "static/media/FrontEnd Artem Khristov.pdf": "/Portfolio/static/media/FrontEnd Artem Khristov.404c8b95cb2f23604869.pdf",
     "static/media/site3.avif": "/Portfolio/static/media/site3.f80d830480f839dca932.avif",
     "static/media/site1.avif": "/Portfolio/static/media/site1.d264a1e012d5338fa9b8.avif",
     "static/media/site2.avif": "/Portfolio/static/media/site2.bc305d04a01fbe641553.avif",
@@ -29,12 +31,12 @@
     "static/media/file.svg": "/Portfolio/static/media/file.fffad6734da136188db2a9a0e4adbf19.svg",
     "static/media/mui.svg": "/Portfolio/static/media/mui.5f2b7ede673c488f07b346bda9aad7d0.svg",
     "static/media/fb.svg": "/Portfolio/static/media/fb.83eb9ee4d5845a28f90d47c08609b742.svg",
-    "main.b9dc691d.css.map": "/Portfolio/static/css/main.b9dc691d.css.map",
-    "main.f3db03f4.js.map": "/Portfolio/static/js/main.f3db03f4.js.map",
+    "main.9baf90b5.css.map": "/Portfolio/static/css/main.9baf90b5.css.map",
+    "main.803b359d.js.map": "/Portfolio/static/js/main.803b359d.js.map",
     "787.f6e65957.chunk.js.map": "/Portfolio/static/js/787.f6e65957.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9dc691d.css",
-    "static/js/main.f3db03f4.js"
+    "static/css/main.9baf90b5.css",
+    "static/js/main.803b359d.js"
   ]
 }
