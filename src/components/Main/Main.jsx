@@ -13,8 +13,13 @@ import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import ExamplePdf from '../../images/FrontEnd Artem Khristov.pdf';
 
 const Main = () => {
+  const API_KEY = process.env.REACT_APP_API_KEY
+  const ID_KEY = process.env.REACT_APP_ID_KEY
+  const HASH_KEY = process.env.REACT_APP_HASH_KEY
+
   const theme = useContext(ThemeContext);
   const [fullscreen, setFullscreen] = useState(true);
   const [show, setShow] = useState(false);
@@ -32,7 +37,7 @@ const Main = () => {
     e.preventDefault();
     setText('Sended');
 
-    emailjs.sendForm('service_gqr7tgn', 'template_3sl6nv9', form.current, 'Xj-JmQi634Y9cEAnr')
+    emailjs.sendForm(`${HASH_KEY}`, `${ID_KEY}`, form.current, `${API_KEY}`)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -40,8 +45,24 @@ const Main = () => {
       });
   };
 
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.download = 'FrontEnd Artem Khristov CV';
+    link.href = ExamplePdf;
+    link.click();
+  };
+
+  const style = {    
+    dark: {
+      filter: "invert(1)",
+    },
+    light: {
+      filter: "invert(0)",
+    }
+  };
+
   return(
-    <main className={`main main__${theme.theme}`}>
+    <main className={`main main__${theme.theme}`} style={theme.theme === 'dark' ? style.light : style.dark}>
       <Container>
         <div className="main__wrapper">
           <aside className="aside">
@@ -50,13 +71,12 @@ const Main = () => {
             </div>
               <h2 className="user__name">Artyom Hristov</h2>
               <p className="user__title">Frontend Developer</p>
-              <p className="user__info">High level  experience in web design and development knowledge.</p>
+              <p className="user__info">Hello. I'm responsible for assisting with the creation of websites and updating existing web applications using scripting languages. </p>
             <div className="user__social">
               <Social />
             </div>
-            <Button onClick={() => handleShow()} text="Contact me">
-              Contact Me
-            </Button>
+            <Button onClick={() => handleDownload()} text="Resume"></Button>
+            <Button onClick={() => handleShow()} text="Contact me"></Button>
             <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
               <Modal.Header closeButton>
                 <Modal.Title>Contact Me</Modal.Title>

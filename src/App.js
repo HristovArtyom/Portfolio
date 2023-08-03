@@ -4,7 +4,6 @@ import { createContext, useState } from 'react';
 
 import './App.css';
 import {
-  createHashRouter,
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";

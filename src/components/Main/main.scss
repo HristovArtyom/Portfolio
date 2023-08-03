@@ -3,18 +3,10 @@
   justify-content: space-between;
   border-top: none;
   padding-top: 150px;
-  background: url(../../images/bg3.jpg);  
+  background: url(../../images/bg3_1.jpg);  
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  &__dark {
-    filter: invert(0);
-  }
-
-  &__light {
-    filter: invert(1);
-  }
 
   &__wrapper {
     display: flex;
